@@ -6,7 +6,7 @@ Simple integration of [nviennot/irb-config](https://github.com/nviennot/irb-conf
 
 ```shell
 mkdir -p "$(rbenv root)/plugins"
-git clone https://github.com/douglascamata/rbenv-irb-config.git "$(rbenv root)/plugins"
+git clone https://github.com/douglascamata/rbenv-irb-config.git "$(rbenv root)/plugins/irb-config"
 rbenv irb-config install
 ```
 ## Manual update
