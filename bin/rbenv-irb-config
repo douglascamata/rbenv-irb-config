@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+#
+# Summary: manages irb-config installation and updates.
+#
+# Usage: rbenv irb-config install
+#        rbenv irb-config update
+#
+# This command helps you manage irb-config installation within rbenv.
+# It will download irb-config inside your home folder (~/.irb) and
+# follow the instruction in the tool's github page to install it
+# and even update it automatically when new ruby versions are
+# installed using ruby-build.
+
+set -e
+[ -n "$RBENV_DEBUG" ] && set -x
+
+if [ "$1" = "install" ]; then
+  git clone git://github.com/nviennot/irb-config.git ~/.irb
+  cd ~/.irb
+  make install
+  exit
+elif [ "$1" = "update" ]; then
+  cd ~/.irb
+  make update
+  exit
+fi
