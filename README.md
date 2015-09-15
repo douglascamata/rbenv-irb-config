@@ -18,3 +18,7 @@ rbenv irb-config update
 ## Features
 
 Please visit [nviennot/irb-config](https://github.com/nviennot/irb-config/) for information about all the awesomeness of irb-config!
+
+## License
+
+`rbenv-irb-config` is released under the WTFPL license. For more information see the LICENSE file.
